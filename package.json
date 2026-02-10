@@ -1,0 +1,19 @@
+{
+    "name": "analytics-engine",
+    "version": "1.0.0",
+    "description": "High-throughput real-time analytics engine",
+    "private": true,
+    "workspaces": [
+        "services/*",
+        "shared"
+    ],
+    "scripts": {
+        "dev:ingestion": "npm run dev --workspace=@analytics/ingestion",
+        "dev:worker": "npm run dev --workspace=@analytics/worker",
+        "dev:dashboard": "npm run dev --workspace=@analytics/dashboard",
+        "test:load": "k6 run tests/load_test.js"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.0"
+    }
+}

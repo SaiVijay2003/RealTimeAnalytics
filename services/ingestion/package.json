@@ -1,0 +1,17 @@
+{
+    "name": "@analytics/ingestion",
+    "version": "1.0.0",
+    "description": "High-throughput event ingestion service",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js"
+    },
+    "dependencies": {
+        "fastify": "^4.24.0",
+        "ioredis": "^5.3.0",
+        "zod": "^3.22.0",
+        "uuid": "^9.0.0",
+        "prom-client": "^15.0.0"
+    }
+}
